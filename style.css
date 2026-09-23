@@ -1,0 +1,41 @@
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.tag {
+    animation: float 5s ease-in-out infinite;
+}
+
+.photo{
+    position:absolute;
+    top : 25px;
+    left : 20px;
+}
+.boutton{
+    position:absolute;
+    top : 100px;
+    right : 100px;
+}
+
+.boutton {
+    background-color: white;
+    color: darkblue;
+    transition: all 0.3s ease;
+}
+.boutton:hover {
+    background-color: darkblue;
+    color: white;
+}
+
+.contact{
+    position:absolute;
+    right : 20px;
+}
+header{
+    position: relative;
+}
