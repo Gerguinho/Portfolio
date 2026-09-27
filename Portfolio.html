@@ -20,8 +20,16 @@
                 <img id="photo" class="is-rounded" src="images/moi.jpg" alt="photo de profil">
             </figure>  
         </div>
-        <button class="button is-rounded boutton ">Plus d'infos</button>
+        <button id="ouvrir-modale" type="button" class="button is-rounded boutton" aria-controls="overlay" aria-expanded="false">Plus d'infos</button>
     </header>
+
+    <div class="overlay" id="overlay" aria-hidden="true">
+        <div class="welcome-modal" role="dialog" aria-modal="true" aria-labelledby="titre-modale">
+            <button id="fermer-modale" type="button" class="close-btn" aria-label="Fermer">×</button>
+            <h2 id="titre-modale">Bienvenue !</h2>
+            <p>Merci de visiter notre site.</p>
+        </div>
+    </div>
 
     <section class="section">
         <div class="container">

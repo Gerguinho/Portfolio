@@ -1,4 +1,5 @@
-@keyframes float {
+@keyframes float { /*cette partie du code permet de faire flotter un élèment dans la page, elle est associé avec tag
+    cette fonctionnalité provient de de la framework Bulma */
     0%, 100% {
         transform: translateY(0px);
     }
@@ -20,6 +21,38 @@
     position:absolute;
     top : 100px;
     right : 100px;
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+    z-index: 1000;
+  background: rgba(0, 0, 0, 0.5);
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay.active {
+  display: flex;
+}
+
+.welcome-modal {
+  background: white;
+  padding: 32px;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 360px;
+  position: relative;
+}
+.close-btn {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
 }
 
 .boutton {
