@@ -9,25 +9,45 @@
 </head>
 <body>
 
-    <header class="hero is-info">
-        <div class="hero-body has-text-centered">
-            <h1 class="title is-1">BIENVENUE</h1>
-            <p class="subtitle">Présentation de mon portfolio</p>
-            <p><strong>HOUNANG PETCHEU Bryan Gerguinho</strong></p>
+    <header class="hero is-info entete">
+  <div class="hero-body">
+    <div class="entete-contenu">
+
+      <figure class="image is-128x128 photo">
+        <img id="photo" class="is-rounded" src="images/moi.jpg"
+             alt="Photo de Bryan Gerguinho HOUNANG PETCHEU">
+      </figure>
+
+      <div class="entete-texte">
+        <h1 class="title is-2">HOUNANG PETCHEU Bryan Gerguinho</h1>
+        <h2 class="subtitle is-4">Ingénieur en systèmes d'information</h2>
+
+        <div class="tags domaines">
+          <span class="tag is-rounded">Développement</span>
+          <span class="tag is-rounded">Intelligence artificielle</span>
+          <span class="tag is-rounded">Réseaux</span>
+          <span class="tag is-rounded">Sécurité</span>
         </div>
-        <div class="photo">
-            <figure class="image is-128x128">
-                <img id="photo" class="is-rounded" src="images/moi.jpg" alt="photo de profil">
-            </figure>  
+
+        <div class="buttons">
+          <a href="#projets" class="button is-white is-rounded">Voir mes projets</a>
+          <a href="#contact" class="button is-info is-inverted is-outlined is-rounded">Me contacter</a>
         </div>
-        <button id="ouvrir-modale" type="button" class="button is-rounded boutton" aria-controls="overlay" aria-expanded="false">Plus d'infos</button>
-    </header>
+      </div>
+
+      <!-- Garde exactement ton bouton actuel (id, aria-controls, etc.) -->
+      <button id="ouvrir-modale" type="button" class="button is-rounded boutton"
+              aria-controls="overlay">Plus d'infos</button>
+
+    </div>
+  </div>
+</header>
 
     <div class="overlay" id="overlay" aria-hidden="true">
         <div class="welcome-modal" role="dialog" aria-modal="true" aria-labelledby="titre-modale">
             <button id="fermer-modale" type="button" class="close-btn" aria-label="Fermer">×</button>
-            <h2 id="titre-modale">Bienvenue !</h2>
-            <p>Merci de visiter notre site.</p>
+            <h2 id="titre-modale">HOUNANG PETCHEU Bryan Gerguinho</h2>
+            <p>Ingénieur en systèmes d'information.</p>
         </div>
     </div>
 
