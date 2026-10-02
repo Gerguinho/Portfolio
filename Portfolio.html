@@ -35,75 +35,114 @@
         </div>
       </div>
 
-      <!-- Garde exactement ton bouton actuel (id, aria-controls, etc.) -->
-      <button id="ouvrir-modale" type="button" class="button is-rounded boutton"
-              aria-controls="overlay">Plus d'infos</button>
-
     </div>
   </div>
 </header>
-
-    <div class="overlay" id="overlay" aria-hidden="true">
-        <div class="welcome-modal" role="dialog" aria-modal="true" aria-labelledby="titre-modale">
-            <button id="fermer-modale" type="button" class="close-btn" aria-label="Fermer">×</button>
-            <h2 id="titre-modale">HOUNANG PETCHEU Bryan Gerguinho</h2>
-            <p>Ingénieur en systèmes d'information.</p>
-        </div>
-    </div>
 
     <section class="section">
         <div class="container">
             <div class="box">
                 <h2 class="title is-3">Profil</h2>
-                <p>Actuellement ingénieur en Développement logiciel, passionné des systèmes d'information,
-                    durant mon apprentissage j'ai réalisé des projets que vous verrez dans la suite de ce portfolio.
+                <p>
+                    Futur Ingénieur en développement logiciel, je m’intéresse à la conception de solutions numériques
+                    et aux systèmes d’information. Mon parcours m’a permis de réaliser plusieurs projets et de
+                    développer mon intérêt pour le développement, l’intelligence artificielle, les réseaux et la
+                    sécurité informatique. J’aime apprendre, résoudre des problèmes et transformer une idée en
+                    solution concrète.
                 </p>
             </div>
         </div>
     </section>
 
-    <section class="section">
+    <section id="projets" class="section" aria-labelledby="titre-projets">
         <div class="container">
-            <div class="columns">
-                <div class="column">
-                    <div class="box">
-                        <h2 class="title is-3">Projets</h2>
-                        <p>Cette partie est encore vide</p>
-                    </div>
-
+            <h2 id="titre-projets" class="title is-3">Projets</h2>
+            <article class="project-showcase">
+                <div class="project-identity">
+                    <p class="project-kicker">Projet d'entreprise</p>
+                    <h3 class="project-name">YAMELAH</h3>
+                    <p class="project-category">Plateforme sociale vidéo</p>
+                    <span class="project-status">En cours</span>
                 </div>
-            
-                <div class="column">
-                    <div class="box">
-                        <h2 class="title is-3">Compétences</h2>
-                        <div class="tags">
-                            <span class="tag is-info">HTML</span>
+                <div class="project-details">
+                    <h4>Une plateforme autour du partage vidéo</h4>
+                    <p>
+                        YAMELAH est un projet en construction. Une première interface et les fenêtres
+                        d’inscription et de connexion sont réalisées ; les fonctionnalités principales
+                        restent à développer.
+                    </p>
+                    <div class="project-progress">
+                        <div>
+                            <span class="project-progress-label">Déjà réalisé</span>
+                            <p>Interface et parcours d’inscription/connexion</p>
+                        </div>
+                        <div>
+                            <span class="project-progress-label">À venir</span>
+                            <p>Développement progressif des fonctionnalités principales</p>
                         </div>
                     </div>
-
-                </div>
-                <div class="column">
-                    <div class="box">
-                        <h2 class="title is-3">Savoir-faire</h2>
-                        <ul>
-                            <!-- Partie à compléter -->
+                    <div class="project-stack">
+                        <strong>Technologies</strong>
+                        <ul class="project-tech-list" aria-label="Technologies utilisées">
+                            <li>React</li>
+                            <li>JavaScript</li>
+                            <li>HTML/CSS</li>
+                            <li>Python</li>
+                            <li>MySQL</li>
                         </ul>
                     </div>
                 </div>
-                <div class="column">
-                    <div class="box">
-                        <h2 class="title is-3">CV</h2>
-                        <!-- Mettre un lien vers mon cv -->
+            </article>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="portfolio-panels">
+                <article class="box portfolio-panel">
+                    <h2 class="title is-4">Compétences</h2>
+                    <div class="tags">
+                        <span class="tag is-info is-light">React</span>
+                        <span class="tag is-info is-light">JavaScript</span>
+                        <span class="tag is-info is-light">HTML</span>
+                        <span class="tag is-info is-light">CSS</span>
+                        <span class="tag is-info is-light">Python</span>
+                        <span class="tag is-info is-light">MySQL</span>
                     </div>
-                </div>
+                </article>
+                <article class="box portfolio-panel">
+                    <h2 class="title is-4">Savoir-faire</h2>
+                    <ul class="savoir-faire-list">
+                        <li>Concevoir des interfaces web avec React</li>
+                        <li>Mettre en place des parcours d’inscription et de connexion</li>
+                        <li>Développer des fonctionnalités avec Python</li>
+                        <li>Organiser et gérer des données avec MySQL</li>
+                    </ul>
+                </article>
+                <article class="box portfolio-panel cv-panel">
+                    <h2 class="title is-4">CV</h2>
+                    <a class="button is-info" href="CV-Bryan-Hounang-Petcheu.pdf" download>
+                        Télécharger mon CV
+                    </a>
+                </article>
             </div>
         </div>
     </section>
 
-    <footer class="footer">
-        <div class="content has-text-right">
-            Tel : +33 7 44 10 05 67 <br>
-            Email : hounanggerguinho@gmail.com 
+    <footer id="contact" class="footer">
+        <div class="content has-text-centered contact-details">
+            <p>
+                Tel : <a href="tel:+33744100567">+33 7 44 10 05 67</a><br>
+                Email : <a href="mailto:hounanggerguinho@gmail.com">hounanggerguinho@gmail.com</a>
+            </p>
+            <nav class="contact-links" aria-label="Réseaux sociaux">
+                <a href="https://github.com/Gerguinho" target="_blank" rel="noopener noreferrer">
+                    <img src="https://cdn.simpleicons.org/github/181717" alt="" aria-hidden="true">GitHub
+                </a>
+                <a href="https://www.linkedin.com/in/bryan-gerguinho-hounang-petcheu-a0a978359/" target="_blank" rel="noopener noreferrer">
+                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@13.15.0/icons/linkedin.svg" alt="" aria-hidden="true">LinkedIn
+                </a>
+            </nav>
         </div>
         <div class="content has-text-centered">
             <p>&copy; 2026 - Tous droits réservés</p>
