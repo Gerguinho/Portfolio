@@ -36,14 +36,23 @@ header {
 
 .entete .photo {
     margin: 0;
+    position: relative;
 }
 
-.entete #photo {
+.entete .photo img {
+    position: absolute;
+    inset: 0;
     width: 128px;
     height: 128px;
     object-fit: cover;
     border: 4px solid #fff;
     box-shadow: 0 6px 18px rgba(0, 0, 0, .25);
+    opacity: 0;
+    transition: opacity 1200ms ease-in-out;
+}
+
+.entete .photo img.is-active {
+    opacity: 1;
 }
 
 .entete-texte .title,
@@ -295,6 +304,12 @@ header {
     .project-progress {
         grid-template-columns: 1fr;
         gap: 16px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .entete .photo img {
+        transition: none;
     }
 }
 

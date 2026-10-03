@@ -1,9 +1,13 @@
-let photo = document.getElementById("photo");
+const photos = [
+    document.getElementById("photo"),
+    document.getElementById("photo-2")
+];
+let photoIndex = 0;
 
-photo.addEventListener("mouseenter",function(){
-    photo.src = "images/moi2.jpg";
-});
-photo.addEventListener("mouseleave", function() {
-    photo.src = "images/moi.jpg";
-});
+window.setInterval(() => {
+    const nextPhotoIndex = (photoIndex + 1) % photos.length;
+    photos[photoIndex].classList.remove("is-active");
+    photos[nextPhotoIndex].classList.add("is-active");
+    photoIndex = nextPhotoIndex;
+}, 5000);
 
